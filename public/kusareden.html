@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Kusareden</title>
+  <link rel="stylesheet" href="../src/kusaredenStyle.css">
+  <script src="../src/conditional.js"></script>
+</head>
+
+<body>
+  <img id="logo" src="./resources/logo/Group 41.png" alt="Kusareden Logo" />
+  <h1>Kusareden</h1>
+
+  <!-- Input box -->
+  <div onsubmit="myFunction()">
+    <input type="text" id="solution" name="solution" autocomplete="off"><br><br>
+    <button id="submit">Submit</button>
+    <p id="text"></p>
+  </div>
+
+  <!-- Pop-up (modal) content -->
+  <div id="report" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal...</p>
+      <img id="reportImage" src="" alt="Response Image">
+    </div>
+  </div>
+
+  <div class='conditional'></div>
+</body>
