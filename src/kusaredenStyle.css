@@ -1,57 +1,114 @@
 body {
   background-color: black;
-  color: #FCC23B;
-  text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding-top: 10vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(../public/resources/identity/bkg.gif);
+  background-size: auto 100vh;
+  color: #fcc23b;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   overflow: hidden;
   user-select: none;
 }
-
-/* logo */
-#logo {
-  height: 25vh
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* input box */
+/* Floating card */
+#card {
+  background-color: black;
+  border: 1px solid #fcc23b;
+  position: absolute;
+  width: 40vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh 4vw;
+  box-shadow: 0 0 8px #fcc23b;
+  font-size: 1.1rem;
+}
+
+#instructions {
+  width: 42vw;
+}
+/* Input box */
 #solution {
-  width: 30vw;
-  height: 3vh;
+  width: 40vw;
+  height: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1vw;
+  font-size: 1.6669rem;
+}
+#solution::placeholder {
+  color: #fcc23b;
+  font-size: 1.6669rem;
+}
+#solution:hover {
+  box-shadow: 0 0 8px #fcc23b;
+}
+#solution,
+button {
+  background-color: black;
+  color: #fcc23b;
+  border: 1px solid #fcc23b;
+}
+#submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* report modal */
+button {
+  padding: 1vh 1vw;
+  font-size: 1rem;
+}
+
+#message {
+  display: block;
+}
+
+/* Report modal */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  background-color: rgb(0,0,0);
-  justify-content: center;
-}
-/* modal content */
-.modal-content {
-  /* margin: 5vh auto; */
-  padding: 2.5vh 2.5vw; 
   width: 100vw;
   height: 100vh;
-
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
 }
-/* close button */
+/* Modal content */
+#modal-content {
+  /* margin: 5vh auto; */
+  padding: 2.5vh 2.5vw;
+  width: 100vw;
+  height: 100vh;
+}
+/* Close button */
 .close {
+  border: 1px solid #fcc23b;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  margin: 1vh 1vw;
+  aspect-ratio: 1/1;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .close:hover,
 .close:focus {
-  color: #EE8350;
   text-decoration: none;
   cursor: pointer;
-}
-
-#reportImage{
-  max-height: 80vh;
+  text-shadow: 0 0 8px #fcc23b;
+  box-shadow: 0 0 8px #fcc23b;
 }

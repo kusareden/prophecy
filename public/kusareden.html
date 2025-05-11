@@ -7,24 +7,31 @@
 </head>
 
 <body>
-  <img id="logo" src="./resources/logo/Group 41.png" alt="Kusareden Logo" />
-  <h1>Kusareden</h1>
+  <div class="wrapper">
+    <div id="card">
+      <p>腐れデン
+        </br>
+        Kusareden
+      </p>
+      <span id="instructions">
+        <p>Something belongs here...</p>
+      </span>
+      <!-- Input box -->
+      <form id="solutionForm">
+        <input type="text" id="solution" name="solution" autocomplete="off"
+          placeholder="&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226"><br><br>
+        <span id="submit-button"><button type="submit" id="submit">SUBMIT</button></span>
+      </form>
+      <div>
+        <p id="message"></p>
+      </div>
+    </div>
 
-  <!-- Input box -->
-  <div onsubmit="myFunction()">
-    <input type="text" id="solution" name="solution" autocomplete="off"><br><br>
-    <button id="submit">Submit</button>
-    <p id="text"></p>
-  </div>
-
-  <!-- Pop-up (modal) content -->
-  <div id="report" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Some text in the Modal...</p>
-      <img id="reportImage" src="" alt="Response Image">
+    <!-- Pop-up (modal) content -->
+    <div id="report" class="modal">
+      <div><span class="close">&times;</span>
+      </div>
+      <div id="content" class="modal-content"></div>
     </div>
   </div>
-
-  <div class='conditional'></div>
 </body>
