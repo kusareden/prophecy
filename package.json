@@ -1,0 +1,11 @@
+{
+  "homepage": "https://kusareden.github.io/prophecy/",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "deploy-org": "gh-pages -d build --remote org"
+  }
+}
