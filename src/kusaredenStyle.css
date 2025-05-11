@@ -52,6 +52,9 @@ body {
 #solution:hover {
   box-shadow: 0 0 8px #fcc23b;
 }
+#solution:focus {
+  outline: none;
+}
 #solution,
 button {
   background-color: black;

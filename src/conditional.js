@@ -1,4 +1,4 @@
-const REPORTS_BASEPATH = './resources/documents/'
+const REPORTS_BASEPATH = './public/resources/documents/'
 
 window.onload = function () {
   // Get the the input when the user submits their answer
@@ -31,17 +31,24 @@ window.onload = function () {
     // Show modal based on user input
     switch (solution) {
       case "aftermath":
-        const iframe = document.createElement('iframe');
-        iframe.src = `${REPORTS_BASEPATH}the_columbia_post.pdf`;
-        iframe.style.width = "100%";
-        iframe.style.height = "90vh";
-        iframe.style.border = "none";
-        content.appendChild(iframe);
+        const iframeNewspaper = document.createElement('iframe');
+        iframeNewspaper.src = `${REPORTS_BASEPATH}the_columbia_post.pdf`;
+        iframeNewspaper.style.width = "100%";
+        iframeNewspaper.style.height = "90vh";
+        iframeNewspaper.style.border = "none";
+        content.appendChild(iframeNewspaper);
 
         modal.style.display = "block";
         break;
-      case "rat":
+      case "wanted":
+        const iframeProfiles = document.createElement('iframe');
+        iframeProfiles.src = `${REPORTS_BASEPATH}profiles.pdf`;
+        iframeProfiles.style.width = "100%";
+        iframeProfiles.style.height = "90vh";
+        iframeProfiles.style.border = "none";
+        content.appendChild(iframeProfiles);
 
+        modal.style.display = "block";
         break;
       case "betrayal":
         message = "THIS CODE CAN NOT BE USED HERE";

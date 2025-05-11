@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Kusareden</title>
+  <link rel="stylesheet" href="./src/kusaredenStyle.css">
+  <script src="./src/conditional.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="card">
+      <p>腐れデン
+        </br>
+        Kusareden
+      </p>
+      <span id="instructions">
+        <p>Something belongs here...</p>
+      </span>
+      <!-- Input box -->
+      <form id="solutionForm">
+        <input type="text" id="solution" name="solution" autocomplete="off"
+          placeholder="&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226&#8226"><br><br>
+        <span id="submit-button"><button type="submit" id="submit">SUBMIT</button></span>
+      </form>
+      <div>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <!-- Pop-up (modal) content -->
+    <div id="report" class="modal">
+      <div><span class="close">&times;</span>
+      </div>
+      <div id="content" class="modal-content"></div>
+    </div>
+  </div>
+</body>
