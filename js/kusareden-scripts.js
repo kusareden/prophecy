@@ -54,17 +54,25 @@ window.onload = function () {
         modal.style.display = "block";
         break;
       case "a6b39fa8cb7ca966708528463ef77c3db94c52a959c97347f93b4715d6e11470":
-        /*  const iframeProfiles = document.createElement('iframe');
-         iframeProfiles.src = `${REPORTS_BASEPATH}profiles.pdf`;
-         iframeProfiles.style.width = "100%";
-         iframeProfiles.style.height = "90vh";
-         iframeProfiles.style.border = "none";
-         content.appendChild(iframeProfiles); */
+        const iframeMemoir = document.createElement('iframe');
+        iframeMemoir.src = `${REPORTS_BASEPATH}memoir.pdf`;
+        iframeMemoir.style.width = "100%";
+        iframeMemoir.style.height = "90vh";
+        iframeMemoir.style.border = "none";
+        content.appendChild(iframeMemoir);
 
         modal.style.display = "block";
         break;
       case "eaa22de66e34c450159b024a070c0b6ebf8ad9b50cdec3b803db6df85ac3ddeb":
-        message = "THIS CODE CAN NOT BE USED HERE";
+        const letter = document.createElement('img');
+        letter.src = `${REPORTS_BASEPATH}amira_last_message.png`;
+        letter.style.maxHeight = "90vh";
+        letter.style.display = "block";
+        letter.style.margin = "5vh auto";
+        content.appendChild(letter);
+
+        modal.style.display = "block";
+        // message = "THIS CODE CAN NOT BE USED HERE";
         break;
       case "1f0fb05f858637c5eba5b004630aab6c6d6634adb58af89ece0435ef1c62704f":
         message = "YOU HAVE ALREADY USED THIS SOLUTION";
