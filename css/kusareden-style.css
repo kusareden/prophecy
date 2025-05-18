@@ -1,14 +1,22 @@
+/* Import from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap");
+
 body {
   background-color: black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url(../public/resources/identity/bkg.gif);
   background-size: auto 100vh;
   color: #fcc23b;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "M PLUS 1 Code", monospace;
   overflow: hidden;
   user-select: none;
 }
+
+.japanese {
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 3rem;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -30,10 +38,12 @@ body {
   padding: 3vh 4vw;
   box-shadow: 0 0 8px #fcc23b;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 #instructions {
   width: 42vw;
+  text-align: left;
 }
 /* Input box */
 #solution {
@@ -44,22 +54,49 @@ body {
   justify-content: center;
   padding: 1vw;
   font-size: 1.6669rem;
+  font-family: "M PLUS 1 Code", monospace;
 }
 #solution::placeholder {
   color: #fcc23b;
   font-size: 1.6669rem;
 }
-#solution:hover {
-  box-shadow: 0 0 8px #fcc23b;
-}
 #solution:focus {
   outline: none;
+}
+button {
+  padding: 1vh 1vw;
+  font-size: 1rem;
+}
+/* Close button */
+.close {
+  border: 1px solid #fcc23b;
+  float: right;
+  margin: 1vh 1vw;
+  aspect-ratio: 1/1;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#solution:hover,
+button:hover,
+.close:hover {
+  box-shadow: 0 0 8px #fcc23b;
+}
+button:active,
+.close:active {
+  color: #fc9b3b;
+  box-shadow: 0 0 8px #fc9b3b;
+  border: 1px solid #fc9b3b;
 }
 #solution,
 button {
   background-color: black;
   color: #fcc23b;
   border: 1px solid #fcc23b;
+  font-family: "M PLUS 1 Code", monospace;
 }
 #submit-button {
   display: flex;
@@ -67,13 +104,10 @@ button {
   align-items: center;
 }
 
-button {
-  padding: 1vh 1vw;
-  font-size: 1rem;
-}
-
 #message {
   display: block;
+  min-height: 1.6669rem;
+  margin-top: 3vh;
 }
 
 /* Report modal */
@@ -94,24 +128,4 @@ button {
   padding: 2.5vh 2.5vw;
   width: 100vw;
   height: 100vh;
-}
-/* Close button */
-.close {
-  border: 1px solid #fcc23b;
-  float: right;
-  margin: 1vh 1vw;
-  aspect-ratio: 1/1;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  text-align: center;
-}
-.close:hover,
-.close:focus {
-  text-decoration: none;
-  cursor: pointer;
-  text-shadow: 0 0 8px #fcc23b;
-  box-shadow: 0 0 8px #fcc23b;
 }
