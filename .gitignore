@@ -1,1 +1,17 @@
 .DS_STORE
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.*
+
+# Static files cache
+*.cache
+
+# Log files
+npm-debug.log*
+pnpm-debug.log*
