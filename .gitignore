@@ -15,3 +15,4 @@ node_modules/
 # Log files
 npm-debug.log*
 pnpm-debug.log*
+public/resources/.DS_Store
